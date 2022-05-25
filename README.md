@@ -8,4 +8,4 @@ Change the variable `only_in_scope` to `True`
 Provide your own logic for deduplicating request/response pairs in the `deduplicate()` function, to determine whether items should be added to the site map.
 
 ## Requests without a response
-If you would like to add requests to the site map before they receive a response, remove the `if` statement on line 20. Make sure to adjust the indentation of `self._callbacks.addToSiteMap(message.getMessageInfo())`.
+If you would like to add requests to the site map before they receive a response, remove the `if` statement [here](https://github.com/Hannah-PortSwigger/AddAllProxyItemsToSiteMap/blob/7d73706f3ac8a3c428c7f9c04a82e416cd565616/AddAllProxyItemsToSiteMap.py#L22). Make sure to adjust the indentation of `self._callbacks.addToSiteMap(message.getMessageInfo())`.
